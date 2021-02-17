@@ -1,1 +1,5 @@
-bankTestPackage\bankDemo.class
+bankTestPackage\BaseClass.class
+bankingPagePackage\LoginPage.class
+bankTestPackage\DB_Connect.class
+BankUtilitiesPackage\ReadConfig.class
+bankTestPackage\LoginTest_001.class

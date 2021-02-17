@@ -6,7 +6,7 @@
       <class name="bankTestPackage.bankDemo">
         <methods>
           <include name="Browsersetup"/>
-          <include name="logindetails" invocation-numbers="1"/>
+          <include name="logindetails"/>
           <include name="quittingdriver"/>
         </methods>
       </class> <!-- bankTestPackage.bankDemo -->

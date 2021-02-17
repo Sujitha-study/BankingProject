@@ -2,40 +2,39 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="123426" started-at="2020-12-03T11:52:57 AEDT" finished-at="2020-12-03T11:55:00 AEDT">
+  <suite name="Suite" duration-ms="32172" started-at="2020-12-21T22:00:54 AEDT" finished-at="2020-12-21T22:01:27 AEDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="123426" started-at="2020-12-03T11:52:57 AEDT" finished-at="2020-12-03T11:55:00 AEDT">
-      <class name="bankTestPackage.bankDemo">
-        <test-method status="PASS" signature="Browsersetup()[pri:0, instance:bankTestPackage.bankDemo@7a187f14]" name="Browsersetup" is-config="true" duration-ms="51884" started-at="2020-12-03T11:52:58 AEDT" finished-at="2020-12-03T11:53:50 AEDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browsersetup -->
-        <test-method status="PASS" signature="logindetails(java.lang.String, java.lang.String)[pri:0, instance:bankTestPackage.bankDemo@7a187f14]" name="logindetails" duration-ms="15384" started-at="2020-12-03T11:53:50 AEDT" data-provider="Testdata" finished-at="2020-12-03T11:54:06 AEDT">
+    <test name="BankingProject" duration-ms="32172" started-at="2020-12-21T22:00:54 AEDT" finished-at="2020-12-21T22:01:27 AEDT">
+      <class name="bankTestPackage.LoginTest_001">
+        <test-method status="PASS" signature="Browsersetup(java.lang.String)[pri:0, instance:bankTestPackage.LoginTest_001@3234e239]" name="Browsersetup" is-config="true" duration-ms="22161" started-at="2020-12-21T22:00:55 AEDT" finished-at="2020-12-21T22:01:17 AEDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr295004]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browsersetup -->
+        <test-method status="PASS" signature="logindetails(java.lang.String, java.lang.String)[pri:0, instance:bankTestPackage.LoginTest_001@3234e239]" name="logindetails" duration-ms="3657" started-at="2020-12-21T22:01:19 AEDT" data-provider="Testdata" finished-at="2020-12-21T22:01:22 AEDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr300443]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tunagez]]>
+                <![CDATA[qyraqEt]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logindetails -->
-        <test-method status="PASS" signature="quittingdriver()[pri:0, instance:bankTestPackage.bankDemo@7a187f14]" name="quittingdriver" is-config="true" duration-ms="1895" started-at="2020-12-03T11:54:06 AEDT" finished-at="2020-12-03T11:54:08 AEDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quittingdriver -->
-        <test-method status="PASS" signature="Browsersetup()[pri:0, instance:bankTestPackage.bankDemo@7a187f14]" name="Browsersetup" is-config="true" duration-ms="47525" started-at="2020-12-03T11:54:08 AEDT" finished-at="2020-12-03T11:54:55 AEDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browsersetup -->
-        <test-method status="FAIL" signature="logindetails(java.lang.String, java.lang.String)[pri:0, instance:bankTestPackage.bankDemo@7a187f14]" name="logindetails" duration-ms="3668" started-at="2020-12-03T11:54:55 AEDT" data-provider="Testdata" finished-at="2020-12-03T11:54:59 AEDT">
+        <test-method status="FAIL" signature="logindetails(java.lang.String, java.lang.String)[pri:0, instance:bankTestPackage.LoginTest_001@3234e239]" name="logindetails" duration-ms="3073" started-at="2020-12-21T22:01:22 AEDT" data-provider="Testdata" finished-at="2020-12-21T22:01:25 AEDT">
           <params>
             <param index="0">
               <value>
@@ -48,20 +47,47 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [Guru99 Bank Manager HomePage] but found []]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9R55L3GO', ip: '192.168.20.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\sujia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f8a1a5be55cde1f888b391fe14b5ee19
+*** Element info: {Using=name, value=uid}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Guru99 Bank Manager HomePage] but found []
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at bankingUI.LoginPage.loginDetails(LoginPage.java:68)
-at bankTestPackage.bankDemo.logindetails(bankDemo.java:57)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-9R55L3GO', ip: '192.168.20.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\sujia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f8a1a5be55cde1f888b391fe14b5ee19
+*** Element info: {Using=name, value=uid}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+at bankingPagePackage.LoginPage.loginDetails(LoginPage.java:38)
+at bankTestPackage.LoginTest_001.logindetails(LoginTest_001.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,15 +118,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logindetails -->
-        <test-method status="PASS" signature="quittingdriver()[pri:0, instance:bankTestPackage.bankDemo@7a187f14]" name="quittingdriver" is-config="true" duration-ms="1408" started-at="2020-12-03T11:54:59 AEDT" finished-at="2020-12-03T11:55:00 AEDT">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:bankTestPackage.LoginTest_001@3234e239]" name="Teardown" is-config="true" duration-ms="1242" started-at="2020-12-21T22:01:25 AEDT" finished-at="2020-12-21T22:01:27 AEDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quittingdriver -->
-      </class> <!-- bankTestPackage.bankDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Teardown -->
+      </class> <!-- bankTestPackage.LoginTest_001 -->
+    </test> <!-- BankingProject -->
+  </suite> <!-- Suite -->
 </testng-results>
